@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Profit</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>💰 Hitung Untung</h2>
+
+  <input type="number" id="modal" placeholder="Modal">
+  <input type="number" id="jual" placeholder="Harga Jual">
+  <input type="number" id="jumlah" placeholder="Jumlah">
+
+  <button onclick="hitung()">Hitung</button>
+
+  <h3 id="hasil">Untung: 0</h3>
+</div>
+
+<script src="app.js"></script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+
+</body>
+</html>
